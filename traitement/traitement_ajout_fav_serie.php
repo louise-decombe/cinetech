@@ -3,9 +3,9 @@
 require('../classes/config.php');
 
 
-
+$id_user= $_SESSION['user']['id'];
     $id_film = htmlspecialchars($_POST['id_serie']);
-    $query = $db->query("SELECT * FROM wishlist WHERE id_film= $id_film");
+    $query = $db->query("SELECT * FROM wishlist WHERE id_user= $id_user AND id_film = $id_film");
 
 if (count($query) >= 1 ){
 
