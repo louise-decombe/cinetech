@@ -32,6 +32,7 @@
             <button type="submit"  class="btn btn-primary"name="submit">ME CONNECTER</button>
             <a id="linkconnect" href="inscription.php">Je dois m'inscrire</a>
 </fieldset>
+
         </form>
     </section>
 </main>
@@ -42,6 +43,7 @@
 <script src="js/script_form.js"></script>
 
 <script src="js/script_search.js"></script>
+
 
 </body>
 </html>

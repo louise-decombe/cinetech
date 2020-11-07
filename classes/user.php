@@ -24,12 +24,14 @@ class User
         if (!empty($user)) {
             if (password_verify($password, $user['password'])) {
                 $this->id = $user['id'];
+
                 $this->login = $user['login'];
                 $this->password = $user['password'];
 
                 $_SESSION['user'] = [
                     'id' =>
                         $this->id,
+
                     'login' =>
                         $this->login,
                     'password' =>
@@ -106,6 +108,7 @@ class User
     function disconnect()
     {
         $this->id = "";
+
         $this->login = "";
         $this->password = "";
         session_unset();
@@ -132,6 +135,7 @@ class User
         //var_dump($result_refresh);
 
             $this->id = $result_refresh[0]['id'];
+
             $this->login = $result_refresh[0]['login'];
             $this->password = $result_refresh[0]['password'];
 
@@ -218,6 +222,20 @@ class User
         }
     }
 
+
+    function GetAllUser(){
+        $connexion = $this->db->connectDb();
+        $requete = $connexion->prepare("SELECT * from user");
+        $requete->execute();
+        $resultat = $requete->fetchAll();
+        return $resultat;
+    }
+
+    function DeleteUser($id){
+        $connexion = $this->db->connectDb();
+        $requete = $connexion->prepare("DELETE FROM `user` WHERE id = ?");
+        $requete->execute([$id]);
+    }
 
 }
 ?> 

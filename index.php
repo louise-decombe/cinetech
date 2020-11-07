@@ -14,6 +14,7 @@
 
   </p>
 </div>
+
 <div class="container text-center my-3">
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -42,9 +43,11 @@
 <center> <a href="films.php" class="btn btn-primary btn-lg" rel="noopener noreferrer"> Voir plus de films</a><hr></center>
 
 
+
 <!-- Affichage dernières séries -->
 
 <center> <a href="series.php" class="btn btn-primary btn-lg"  rel="noopener noreferrer"> Voir plus de séries</a></center>
+
 </main>
 <script>
 

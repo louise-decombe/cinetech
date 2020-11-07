@@ -29,6 +29,7 @@
          <!-- login  -->
          <label for="login">
             <span>Login</span><br/>
+
             <span id="disponible"></span>
             <input type="text" type="text" name="login" placeholder="login*" id="login" minlength="3" required>
             <ul class="input-requirements">
@@ -36,10 +37,10 @@
                <li>Caractères spéciaux non autorisés</li>
             </ul>
          </label>
-   
+
          <!-- password  -->
          <label for="password">
-            <span>Password</span><br/>
+            <span>Password</span>
             <input class="" id="password" name="password" placeholder="mot de passe*" type="password" maxlength="100" minlength="8" required>
             <ul class="input-requirements">
                <li>Minimum 8 caractères</li>

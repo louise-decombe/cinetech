@@ -58,9 +58,12 @@
                   </div>
                </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-               <input id="inputValue" class="form-control mr-sm-2" type="search" placeholder="Search" >
-               <button id="btn" class="btn btn-secondary my-2 my-sm-0" type="submit" >Search</button>
+
+            <span id="erreur"></span>
+            <form class="form-inline  my-2 my-lg-0">
+           
+               <input id="inputValue" class="form-control  " type="text" placeholder="Search">
+               <button id="btn" class="btn btn-secondary " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
          </div>
       </nav>
@@ -100,10 +103,13 @@
                   </div>
                </li>
             </ul>
+
+           
             <span id="erreur"></span>
-            <form class="form-inline my-2 my-lg-0">
-               <input id="inputValue" class="form-control mr-sm-2" type="search" placeholder="Search" >
-               <button id="btn" class="btn btn-secondary my-2 my-sm-0" type="submit" >Search</button>
+            <form class="form-inline  my-2 my-lg-0">
+           
+               <input id="inputValue" class="form-control  " type="text" placeholder="Search">
+               <button id="btn" class="btn btn-secondary " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
          </div>
       </nav>

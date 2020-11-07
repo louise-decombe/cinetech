@@ -3,6 +3,7 @@
 require 'db.php';
 require 'user.php';
 require 'wishlist.php';
+
 //la session démarre dans le header 
 session_start();
 
@@ -17,3 +18,4 @@ if (isset($_POST["deco"])) {
     $user->disconnect();
 }
 ?>
+
