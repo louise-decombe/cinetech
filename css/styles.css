@@ -20,7 +20,9 @@ margin: auto;
 
 .carousel-inner a{
 
-    margin: 1%;
+    margin: 1% auto;
+    display: block;
+    width: 20%;
 
 }
 
