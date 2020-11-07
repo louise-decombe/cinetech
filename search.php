@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<body>
+
    <main class="main_search" id="main_search">
         <h1 class="search_title">Mes recherches</h1>
         <section id="results"></section>
