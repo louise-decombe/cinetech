@@ -42,7 +42,7 @@ $(document).ready(function() {
             }
             else{
                 console.log("img")
-                $("#div_bio img").attr('src','images/image_default.png');
+                $("#div_bio img").attr('src','images/actoor_default.png');
             }
            
             $("#div_bio img").attr('alt',data.name);
