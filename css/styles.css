@@ -1,0 +1,474 @@
+/**--------CINETECH-----------**/
+
+
+/** STYLE GENERAL **/
+
+* {
+	margin: 0;
+	padding: 0%;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/**------------------------------**/
+
+
+
+
+/** FILMS.PHP ET SERIES.PHP **/
+
+/** style pour les cartes de films et séries **/
+
+.display {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+align-items: center;
+}
+
+
+/**------------------------------**/
+
+
+/** INSCRIPTION.PHP ET CONNEXION.PHP */
+
+.container_formulaire {
+	margin: 2%;
+	padding: 2%;
+	/* Layout */
+	--fh-layout-display: block;
+	--fh-layout-margin: 10px auto;
+	--fh-layout-text-align: center;
+}
+
+
+/* main {
+=======
+select {
+	height: var(--fh-input-height);
+}
+
+
+input:not([type="submit"]):valid {
+	border-color: #2ecc71;
+}
+
+
+} */
+
+input:not([type="submit"])+.input-requirements {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 1s ease-out;
+}
+
+
+input:not([type="submit"]):hover+.input-requirements,
+input:not([type="submit"]):focus+.input-requirements,
+input:not([type="submit"]):active+.input-requirements {
+	max-height: 1000px;
+	/* Doit juste être plus grand que l'élement list .input-requirement */
+	transition: max-height 1s ease-in;
+}
+
+.container_formulaire {
+	background-color: white;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.input-requirements li.invalid {
+	color: #e74c3c;
+}
+
+.input-requirements li.valid {
+	color: #2ecc71;
+}
+
+.input-requirements li.valid:after {
+	display: inline-block;
+	padding-left: 15px;
+	content: "\2713";
+}
+
+
+/* PAGE SEARCH */
+.main_search{
+    width: 80%;
+    margin: auto;
+}
+.search_title {
+    margin: 5% auto;
+    text-align: center;
+    color: white;
+}
+.search_title:before,
+.search_title:after {
+
+    content:''; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 30%; 
+    height: 1px; 
+    background: white;
+}
+
+.search_title:before { 
+    margin-right: 1rem 
+}
+
+.search_title:after { 
+    margin-left: 1rem 
+}
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 6% auto;
+    text-align: center;
+} 
+
+#results h2 {
+    font-size: 0.9em;
+}
+
+.result {
+    width: 24%;
+    margin: 0.5% 0.5% 4%;
+}
+
+.result img {
+    width: 70%;
+    height: 35vh;
+}
+
+.result a {
+    display: block;
+    width: 70%;
+    margin: 1% auto;
+    padding: 1%;
+    color: white;
+}
+
+.erreur {
+    border: 2px solid red!important;
+}
+
+#erreur {
+    margin-right: 2%;
+    color: red;
+}
+
+.display {
+    display: none!important;
+}
+
+.btn_search{
+    text-align: center;
+}
+/* *********************************** */
+          /* RESPONSIVE SEARCH */
+/* *********************************** */
+@media screen and (max-width: 426px){
+    .main_search {
+        width: 100%;
+    }
+    .search_title:before, .search_title:after {
+        width: 8%;
+    }
+    .result {
+        width: 46%;
+    }
+    #results h2 {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px){
+    .search_title:before, .search_title:after {
+        width: 24%;
+    }
+    .main_search {
+        width: 100%;
+    }
+    #results h2 {
+        font-size: 0.7em;
+    }
+}
+
+/* PAGE MOVIE */
+.main_movie {
+    width: 80%;
+    margin: auto;  
+}
+
+.section_movie{
+    display: flex;
+    margin: 2% auto 0;
+}
+
+#presentation_title{
+    padding-bottom: 3%;
+    border-bottom: 2px solid #073642;
+    color: white;
+}
+
+.categorie {
+    display: inline-block;
+    padding: 1%;
+    margin:  0 0.5%;
+    color: white;
+    border-radius: 4px;
+    
+}
+
+#slogan{
+    display: block;
+    margin: 5% auto!important;
+}
+
+#presentation_p{
+    margin: 3% auto!important;
+    padding: 3%;
+    background-color: #073642;
+    text-align: justify;
+    color: white;
+}
+
+#presentation_img{
+    width: 100%;
+}
+
+.presentation_img{
+    width: 35%;
+    text-align: center;
+}
+
+.presentation_div{
+    width: 65%;
+    padding-left: 1%;
+}
+
+.p_note{
+    font-size: 20px;
+}
+
+#distribution {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section_distribution {
+    padding: 2%;
+    background-color: #073642;
+}
+.image_distribution {
+    width: 100%;
+    height: 40vh;
+    padding: 10%;
+}
+
+#title_actors {
+    color: white;
+}
+
+.acteur_div{
+    width: 20%;
+}
+
+.p_nom_acteur{
+    margin-bottom: 0;
+    text-align: center;
+}
+.p_perso {
+    text-align: center;
+    font-size: 10px;
+}
+
+.btn1 a{
+    color: white!important;
+}
+
+.formulaire_commentaire{
+    display: none;
+}
+
+.span_date{
+    color: #a2a2a2;
+    background: #f3f3f3;
+    font-size: 11px;
+    padding: 2px 6px;
+    display: inline;
+}
+
+#commentaires hr{
+    height: 2px;
+    background-color: #073642;
+}
+
+.section_reponses{
+    margin: auto 0% auto 10%;
+}
+
+#message{
+   
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+#fermer{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.flex button {
+    margin: 0.5%;
+}
+.fermer{
+    display: none!important;
+}
+/* **************************** */
+/* RESPONSIVE PAGE MOVIE */
+/* **************************** */
+@media screen and (max-width: 426px) {
+    .main_movie {
+        width: 100%;
+    }
+    .section_movie {
+        flex-direction: column;
+    }
+    .presentation_img {
+        margin: auto;
+    }
+    .acteur_div {
+        width: 45%;
+    }
+    .presentation_div {
+        width: 90%;
+    }
+    #distribution {
+        flex-wrap: wrap;
+    }
+    #commentaires {
+        width: 90%;
+        margin: auto;
+    }
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main_movie {
+        width: 100%;
+    }
+    .section_movie {
+        flex-direction: column;
+    }
+    #distribution {
+        flex-wrap: wrap;
+    }
+    .acteur_div {
+        width: 26%;
+    }
+    .presentation_div {
+        width: 80%;
+    }
+    .section_distribution {
+        padding: 0%;
+    }
+    #commentaires {
+        width: 90%;
+        margin: auto;
+    }
+}
+/* *************************** */
+
+/* PAGE FILMOGRAPHIE */
+.main_actor {
+    width: 80%;
+    margin: auto;
+}
+
+#div_bio{
+    display: flex;
+    align-items: end;
+}
+
+#div_bio img{
+    width: 30%;
+    margin-right: 2%;
+}
+
+#div_bio div{
+    width: 70%;  
+}
+
+#films, #series{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#films div , #series div {
+    width: 10%;
+    margin: 1%;
+}
+
+#films img , #series img {
+    width: 100%;
+    height: 25vh;
+}
+
+#producteur_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#producteur_section div {
+    width: 15%;
+    margin: 1%;
+}
+
+#producteur_section div img {
+    width: 100%;
+}
+
+#back{
+    text-decoration: none;
+    color: white;
+}
+
+/* ************ RESPONSIVE ************ */
+@media screen and (max-width: 426px){
+    
+    #div_bio {
+        flex-direction: column;
+    }
+    #div_bio img {
+        width: 50%;
+        margin: auto;
+    }
+    #div_bio div {
+        width: 100%;
+    }
+    #films div, #series div {
+        width: 31%;
+    }
+}
+@media screen and (min-width: 426px ) and (max-width: 1024px){
+    #div_bio img {
+        width: 25%;
+    }
+    #films div, #series div {
+        width: 18%;
+    }
+}
+/* *********************************** */
+
+/**------------------------------**/
