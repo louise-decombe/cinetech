@@ -7,12 +7,25 @@
   <h1 class="display-3">MyCinetech</h1>
   <p class="lead">Le site des cinéphiles</p>
   <hr class="my-4">
+  <?php if(!isset($_SESSION['user'])){ ?>
+
   <p>Inscrivez vous ou connectez vous pour commenter les oeuvres et faire des listes de vos favoris!</p>
+
   <p class="lead">
     <a class="btn btn-success btn-lg" href="connexion.php" role="button">Connexion</a>
     <a class="btn btn-success btn-lg" href="inscription.php" role="button">Inscription</a>
 
   </p>
+  <?php } else { ?>
+
+    <p>Bienvenue <?php echo $_SESSION['user']['login'];?>. Tu peux dès à présent compléter ta liste de favoris. </p>
+
+<p class="lead">
+  <a class="btn btn-success btn-lg" href="favoris.php" role="button">Mes favoris</a>
+
+</p>
+
+<?php  } ?>
 </div>
 
 <div class="container text-center my-3">
