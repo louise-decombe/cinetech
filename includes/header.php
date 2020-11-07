@@ -2,7 +2,7 @@
    //chargement des classes et session start
    require('classes/config.php') ?>
 <!DOCTYPE html>
-<html lasng="en">
+<html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
