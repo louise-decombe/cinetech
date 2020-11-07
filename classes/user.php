@@ -23,13 +23,15 @@ class User
         $user = $q->fetch(PDO::FETCH_ASSOC);
         if (!empty($user)) {
             if (password_verify($password, $user['password'])) {
-                $this->id_user = $user['id'];
+                $this->id = $user['id'];
+
                 $this->login = $user['login'];
                 $this->password = $user['password'];
 
                 $_SESSION['user'] = [
-                    'id_user' =>
-                        $this->id_user,
+                    'id' =>
+                        $this->id,
+
                     'login' =>
                         $this->login,
                     'password' =>
@@ -105,7 +107,8 @@ class User
     public
     function disconnect()
     {
-        $this->id_user = "";
+        $this->id = "";
+
         $this->login = "";
         $this->password = "";
         session_unset();
@@ -131,7 +134,8 @@ class User
         $result_refresh = ($refresh->fetchAll());
         //var_dump($result_refresh);
 
-            $this->id_user = $result_refresh[0]['id'];
+            $this->id = $result_refresh[0]['id'];
+
             $this->login = $result_refresh[0]['login'];
             $this->password = $result_refresh[0]['password'];
 
@@ -217,6 +221,7 @@ class User
             echo $message->renderMessage();
         }
     }
+
 
     function GetAllUser(){
         $connexion = $this->db->connectDb();

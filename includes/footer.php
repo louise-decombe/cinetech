@@ -91,5 +91,6 @@
 </footer>
 <!-- Footer -->
 <!-- Scripts JS -->
+
 <script src="js/script_search.js"></script>
 <!-- <script src="js/script_display_index.js"></script> -->

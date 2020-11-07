@@ -58,6 +58,7 @@
                   </div>
                </li>
             </ul>
+
             <span id="erreur"></span>
             <form class="form-inline  my-2 my-lg-0">
            
@@ -102,6 +103,7 @@
                   </div>
                </li>
             </ul>
+
            
             <span id="erreur"></span>
             <form class="form-inline  my-2 my-lg-0">

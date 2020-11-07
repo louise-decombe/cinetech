@@ -12,6 +12,7 @@
 
 
         // retour à la page précédente pour le moment
-        header("location:".  $_SERVER['HTTP_REFERER']); 
+        header("location:../profil.php"); 
+
     }
     ?>

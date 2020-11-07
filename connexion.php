@@ -12,27 +12,39 @@
 <main>
    
     <section id="container-connect">
-        <form action="traitement/traitement_connexion.php" method="post">
+        <fieldset>
+        <form class="container_formulaire" action="traitement/traitement_connexion.php" method="post">
             <section id ="new-user">
-                <h3>DÉJÀ UN COMPTE ?</h3>
-                <a href="inscription.php">INSCRIPTION</a>
             </section>
-            <h4>connectez-vous</h4>
+            <h1>CONNEXION</h1>
             <section id="box-connect">
-                <input name="email" type="text" placeholder="login*">
-                <input name="password" type="password" placeholder="Mot de passe*">
+            <div class="form-group">
+            <label for="email">Login</label>
+
+                <input name="email" class="form-control" type="text" placeholder="login*">
+</div>
+<div class="form-group">
+<label for="exampleInputEmail1">Password</label>
+
+                <input name="password" class="form-control" type="password" placeholder="Mot de passe*">
+</div>
             </section>
-            <button type="submit" name="submit">ME CONNECTER</button>
+            <button type="submit"  class="btn btn-primary"name="submit">ME CONNECTER</button>
             <a id="linkconnect" href="inscription.php">Je dois m'inscrire</a>
+</fieldset>
+
         </form>
     </section>
 </main>
 
 
 
+<?php include('includes/footer.php'); ?>
+<script src="js/script_form.js"></script>
+
+<script src="js/script_search.js"></script>
 
 
 </body>
 </html>
 
-<?php include('includes/footer.php'); ?>

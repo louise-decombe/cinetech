@@ -22,13 +22,14 @@
       }
                
       ?>
-   <div class="container">
+   <div class="container_register">
       <!-- formulaire d'inscription  -->
       <form action="inscription.php" class="container_formulaire form-group" id="container_formulaire" method="post">
-         <h1>Inscription</h1>
+         <h1>INSCRIPTION</h1>
          <!-- login  -->
          <label for="login">
-            <span>Login</span>
+            <span>Login</span><br/>
+
             <span id="disponible"></span>
             <input type="text" type="text" name="login" placeholder="login*" id="login" minlength="3" required>
             <ul class="input-requirements">
@@ -36,6 +37,7 @@
                <li>Caractères spéciaux non autorisés</li>
             </ul>
          </label>
+
          <!-- password  -->
          <label for="password">
             <span>Password</span>
@@ -54,14 +56,13 @@
          <input  class="" type="password" name="conf_password"   placeholder="confirmer le mot de passe*" id="conf_password" maxlength="100" minlength="8" required>
          </label>
          <br>
-         <button type="submit" name="submit">Inscription</button>
-         <input type="submit" name="submit" value="inscription"> 
+         <input type="submit" class="btn btn-secondary" name="submit" value="inscription"> 
       </form>
    </div>
 </body>
-<script src="js/script_form.js">
-  
-</script>
+<script src="js/script_form.js"></script>
+        <script src="js/script_search.js"></script>
+
 </html>
 <?php include('includes/footer.php'); ?>
 
