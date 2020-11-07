@@ -9,7 +9,7 @@ $reponse = new Response($bdd);
 
 $id_comment = $_GET['id_comment'];
 $content_response = $_POST['content_reponse'];
-$id_user = $_SESSION['user']['id_user']; //////a cahnger avec la session
+$id_user = $_SESSION['user']['id']; 
 $id_film = $_POST['id_film'];
 
 

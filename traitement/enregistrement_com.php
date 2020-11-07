@@ -8,7 +8,7 @@ $bdd = new DB("localhost", "root", "", "cinetech");
 $commentaire = new Comment($bdd);
 
 //id user session
-$id_user = $_SESSION['user']['id_user'];
+$id_user = $_SESSION['user']['id'];
 
 $id_film = $_GET['id_film'];
 $comment = $_POST['comment'];
